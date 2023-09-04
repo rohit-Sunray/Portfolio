@@ -1,0 +1,106 @@
+.about .section-text {
+    margin-bottom: 50px;
+}
+
+.skills-toggle {
+    background-color: var(--primary);
+    position: relative;
+    width: max-content;
+    margin-inline: auto;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+
+    margin-bottom: 20px;
+    border-radius: 100px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.skills-toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    width: 90px;
+    transition: var(--transition-1);
+    z-index: -1;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.skills-toggle.active::before {
+    left: 98px;
+    width: 90px;
+}
+
+.toggle-btn {
+    font-weight: 500;
+    color: var(--charcoal);
+    background-color: var(--secondary);
+    padding: 5px 25px;
+    transition: var(--transition-1);
+    border-radius: 100px;
+}
+
+.toggle-btn.active {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.skills-box.active .skills-list,
+.skills-box .tools-list {
+    display: none;
+}
+
+.skills-box .skills-list,
+.skills-box.active .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-card {
+    position: relative;
+    background: var(--cultured);
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    box-shadow: var(--shadow-1);
+    cursor: help;
+    border: 0.0002px solid rgba(0, 0, 0, 0.074);
+}
+
+.skill-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+
+}
+
+.skill-card:hover .tooltip {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

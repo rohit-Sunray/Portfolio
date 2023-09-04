@@ -1,0 +1,143 @@
+.project .container {
+    display: grid;
+    /* gap: 24px; */
+}
+
+.project .section-text {
+    margin-bottom: 50px;
+}
+
+/* .project img {
+    display: none;
+} */
+
+.slider {
+    /* How much box shown in web */
+    --slider-items: 1;
+
+    position: relative;
+
+    width: 100%;
+    padding-inline: 16px;
+    overflow-x: hidden;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to var(--gr-direction, right),
+            var(--background) 0%, transparent 100%);
+}
+
+
+.slider::before {
+    left: 0;
+}
+
+.slider::after {
+    right: 0;
+    --gr-direction: left;
+}
+
+.slider-container {
+    position: relative;
+    /* mandatory for slider */
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 250ms ease;
+}
+
+.slider-item {
+    border: 0.002px solid var(--secondary);
+    border-radius: 8px;
+    margin-left: 2px;
+    min-width: calc(100% / var(--slider-items));
+    width: calc(100% / var(--slider-items));
+    /* padding-inline: 4px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.slider-item:is(:hover, :focus-visible) .img-cover {
+    transform: scale(0.9);
+}
+
+.card {
+    background-color: var(--surface-variant);
+    border-radius: var(--radius-12);
+    overflow: hidden;
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 2.4rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-full);
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
+    opacity: 0.8;
+}
+
+.btn-icon:active {
+    opacity: 1;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slider-control.prev {
+    left: 0;
+}
+
+.slider-control.next {
+    right: 0;
+}
+
+.slider-control:disabled {
+    display: none;
+}
+
+
+.slider-item:nth-child(1) {
+    background-color: rgb(249, 223, 52);
+}
+
+.slider-item .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-weight: 700;
+    transition: var(--transition-1);
+}
+
+.slider-item:hover .hover{
+    opacity: 1;
+}

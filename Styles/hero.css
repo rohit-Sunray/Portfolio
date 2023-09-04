@@ -1,0 +1,77 @@
+.hero {
+    padding-block-start: calc(var(--section-padding) + 10px);
+    background-color: var(--cultured);
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+.rohit-banner {
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+/* .rohit-banner .w-100 {
+    mask-image: url("../images/blob.svg");
+    -webkit-mask-image: url("../images/Blog.svg");
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: auto;
+    -webkit-mask-size: auto;
+} */
+
+.rohit-banner .w-100 {
+    width: 240px;
+    height: 240px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow-x: hidden;
+    animation: morph 8s linear infinite;
+}
+
+@keyframes morph{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+
+
+.hero-content {text-align: center;}
+
+.hero .section-text {margin-block: 24px 36px;}
+
+.btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* You can change it Or remove it */
+.btn-wrapper .btn-primary,
+.btn-wrapper .btn-secondary{
+    background-color: var(--secondary);
+    color: var(--cultured);
+    outline: none;
+    border: none;
+}
+
+
+.btn-wrapper .btn-primary:hover,
+.btn-wrapper .btn-secondary:hover {
+    color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    letter-spacing: 0.7px;
+}
+

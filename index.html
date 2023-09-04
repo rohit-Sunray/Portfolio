@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="./script.js" defer></script>
+
+  <!-- Ion Icon -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/black logo.png" width="94" height="24" alt="Rohit logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="images/white logo.png" width="94" height="24" alt="Rohit logo">
+          </a>
+
+          <button class="nav-close-btn" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#project" class="navbar-link">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link">Contact Me</a>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto: lamaroohit@gmail.com" class="contact-link">lamaroohit@gmail.com</a>
+          <a href="tel: 9876543210" class="contact-link">+977 9876543210</a>
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rohit-lama-21888928a/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rohitsunray/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rohit-Sunray" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" data-nav-toggler>
+        <ion-icon name="menu-sharp"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- Hero -->
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <figure class="rohit-banner">
+            <img class="w-100" src="images/Rohit.jpg" alt="Rohit" width="560" height="540">
+          </figure>
+
+          <div class="hero-content">
+            <h1 class="h1 hero-title">I'm a Front-End Developer.</h1>
+
+            <p class="section-text">
+              Hey there! I'm Rohit, a passionate front-end developer, turning ideas into captivating websites. Let's create digital wonders together!
+            </p>
+  
+            <div class="btn-wrapper">
+              <a href="#project" class="btn btn-primary">See My Work</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <main>
+    <article>
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Me</p>
+
+            <h2 class="h2 section-title">My Programming Skills.</h2>
+  
+            <p class="section-text">Hi, I'm Rohit Lama, a front-end developer specializing in intuitive and responsive user interfaces with the latest web technologies. I'm driven to expand my skill set and become a full-stack web developer, capable of delivering robust applications from start to finish.I strive to create seamless digital experiences that meet expectations, leveraging my expertise in both front-end and back-end technologies</p>
+
+          </div>
+
+          <div class="skills-content">
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+  
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+  
+            <div class="skills-box" data-skills-box>
+              <ul class="skills-list">
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">HTML5</div>
+  
+                    <div class="card-icon">
+                      <img src="images/html5.png" alt="HTML">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">CSS</div>
+  
+                    <div class="card-icon">
+                      <img src="images/css3.png" alt="CSS">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Javascript</div>
+  
+                    <div class="card-icon">
+                      <img src="images/javascript.png" alt="Javascript">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Typescript</div>
+  
+                    <div class="card-icon">
+                      <img src="images/typescript.png" alt="Typescript">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Bootstrap</div>
+  
+                    <div class="card-icon">
+                      <img src="images/bootstrap.png" alt="Bootstrap">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">React</div>
+  
+                    <div class="card-icon">
+                      <img src="images/react.png" alt="React">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+  
+              <ul class="tools-list">
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Git</div>
+  
+                    <div class="card-icon">
+                      <img src="images/git.png" alt="Git">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Photoshop</div>
+  
+                    <div class="card-icon">
+                      <img src="images/photoshop.png" alt="Photoshop">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">VS Code</div>
+  
+                    <div class="card-icon">
+                      <img src="images/vs-code.png" alt="VS Code">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">ChatGpt</div>
+  
+                    <div class="card-icon">
+                      <img src="images/chatgpt.png" alt="chat gpt">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">MS Excel</div>
+  
+                    <div class="card-icon">
+                      <img src="images/msexcel.png" alt="msexcel">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Figma</div>
+  
+                    <div class="card-icon">
+                      <img src="images/figmaa.png" alt="Figma">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <main>
+    <article>
+
+      <section class="section project" id="project">
+        <div class="container">
+
+          <p class="section-subtitle">Projects</p>
+
+          <h2 class="h2 section-title">See My Projects.</h2>
+
+          <p class="section-text">I have built professional web projects using vanilla HTML, CSS, JavaScript, and React, showcasing my expertise in creating dynamic and interactive web applications.</p>
+
+          <div class="slider card-slider" data-slider>
+            <div class="slider-container" data-slider-container>
+
+              <div class="slider-item">
+                <div class="card img-holder" style="--width: 500; --height: 750;">
+                  <a href="https://roohitsunray.github.io/Todo-App/" target="_blank"><img src="./images/Todo.png" alt="" width="500" height="500" class="img-cover"></a>
+                </div>
+                <div class="hover">TODO APP</div>
+              </div>
+
+              
+              <div class="slider-item">
+                <div class="card img-holder" style="--width: 500; --height: 750;">
+                  <img src="" alt="" width="500" height="500" class="img-cover">
+                </div>
+              </div>
+
+              
+              <div class="slider-item">
+                <div class="card img-holder" style="--width: 500; --height: 750;">
+                  <img src="" alt="" width="500" height="500" class="img-cover">
+                </div>
+              </div>
+
+              
+              <div class="slider-item">
+                <div class="card img-holder" style="--width: 500; --height: 750;">
+                  <img src="" alt="" width="500" height="500" class="img-cover">
+                </div>
+              </div>
+
+              
+              <div class="slider-item">
+                <div class="card img-holder" style="--width: 500; --height: 750;">
+                  <img src="" alt="" width="500" height="500" class="img-cover">
+                </div>
+              </div>
+
+            </div>
+
+            <button class="btn-icon slider-control prev" data-slider-prev>
+              <ion-icon name="arrow-back-sharp"></ion-icon>
+            </button>
+      
+            <button class="btn-icon slider-control next" data-slider-next>
+              <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <main>
+    <article>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-content">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h2 section-title">Get In Touch</h2>
+    
+            <p class="section-text">Please complete the form below so we can connect and discuss how I can be of assistance. I will reach out to you promptly. Thank you!.</p> 
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <ion-icon name="location-sharp"></ion-icon>
+
+                <address class="contact-link">Kathmandu, Nepal</address>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="call-sharp"></ion-icon>
+
+                <a class="contact-link" href="tel: +977 987654321">+977 987654321</a>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="mail-sharp"></ion-icon>
+
+                <a class="contact-link" href="mailto: iamrohitsunray@gmail.com">iamrohitsunray@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="globe-sharp"></ion-icon>
+
+                <a class="contact-link" href="www.google.com">www.domain.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <form action="" class="contact-form">
+            <input class="input-field" type="text" name="name" placeholder="Name" required>
+
+            <input class="input-field" type="email" name="email" placeholder="Email" required>
+
+            <textarea class="input-field" name="message"placeholder="Message"></textarea>
+
+            <button class="submit-btn" type="submit">
+              <span class="span">Submit</span>
+              <ion-icon name="arrow-forward-sharp"></ion-icon>
+            </button>
+          </form>
+
+          
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#">rohit lama</a>
+    </div>
+  </footer>
+  
+</body>
+</html>
